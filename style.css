@@ -1,0 +1,173 @@
+body {
+	background: #EFEFEF;
+	font-family: Arial;
+	font-size: 16px;
+}
+a {
+	color: #2FBCDD;
+}
+header {
+	background: #343B54;
+	color: white;
+	display: flex;
+
+}
+
+header h1 {
+	font-size: 1.2rem;
+	font-weight: normal;
+	margin-top: 1rem;
+
+}
+
+header .logo img {
+	position: absolute;
+	left: 0;
+	width: 52px;
+	border-right: 1px solid white;
+	margin-right: 0.5rem;
+	padding-right: 0.5rem;
+	margin-left: 0.25rem;
+	padding-left: 0.25rem;
+
+}
+header .avatar img {
+	border-radius: 50%;
+	width: 50px;
+}
+
+nav {
+	background-color: #80BCA3;
+	padding: 0 0.5rem;
+	position: relative;
+	
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 0.5rem 0;
+}
+nav ul .publicar_nav {
+	position: absolute;
+	top: -0.3rem;
+	right: 0;
+
+}
+
+nav ul .publicar_nav a {
+	background-color: #2FBCDD;
+	font-style: italic;
+	padding: 0.8rem 0.5rem;
+	border-radius: 0.3rem;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	box-shadow: rgba(0,0,0,0.5) 2px 2px 20px;
+}
+
+.contenido {
+	margin: 1rem;
+}
+.contenido .item {
+	background: white;
+	border-bottom: 3px solid #2FBCDD;
+	min-height: 128px;
+	position: relative;
+
+}
+
+.contenido .item .imagen_item {
+	/*position: absolute;*/
+	float: left;
+	margin: 0 1rem 0 0;
+}
+
+.contenido .item .imagen_item img {
+	width: 96px;
+	
+}
+.contenido .item .titulo_item {
+	font-size: 1.2rem;
+	font-style: italic;
+	padding-top: 1rem;
+
+}
+
+.contenido .item .titulo_item a {
+	color: #444;
+	text-decoration: none;
+}
+
+.contenido .item .autor_item {
+	color: #aaa;
+
+}
+
+.contenido .item .datos_item {
+	margin: 1rem 1rem 0 0;
+	text-align: right;
+}
+
+.contenido .item .tag_item {
+	background: #F4502A;
+	border-radius: 0.5rem;
+	color: white;
+	display: inline-block;
+	float: left;
+	padding: 0.2rem 0.5rem;
+	text-decoration: none;
+}
+.contenido .item .datos_item .fecha_item {
+	color: #aaa;
+}
+
+.contenido .item .votacion {
+	background:white;
+	border-radius: 0 0 0.5rem 0.5rem;
+	position: absolute;
+	margin-top: 3px;
+	padding: 0.2rem 0.3rem;
+	top: 100%;
+	width: 90%;
+	left: 5%;
+
+}
+.contenido .item .votacion .comentarios_item {
+	float: right;
+}
+
+footer {
+	background: #2FBCDD;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+	margin-top: 2rem;
+
+	}
+
+footer p:first-child {
+	margin-bottom: 0;
+}
+
+footer p:last-child {
+	margin-top: 0;
+}
+footer p:last-child:before {
+	content: "- ";
+}
+footer p:last-child:after {
+	content: " -";
+}
+
+
+
