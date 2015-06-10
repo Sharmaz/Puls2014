@@ -1,6 +1,32 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?je9aqr');
+	src:url('fonts/icomoon.eot?#iefixje9aqr') format('embedded-opentype'),
+		url('fonts/icomoon.ttf?je9aqr') format('truetype'),
+		url('fonts/icomoon.woff?je9aqr') format('woff'),
+		url('fonts/icomoon.svg?je9aqr#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 body {
 	background: #EFEFEF;
-	font-family: Arial;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 }
 a {
@@ -75,6 +101,11 @@ nav ul .publicar_nav a {
 	box-shadow: rgba(0,0,0,0.5) 2px 2px 20px;
 }
 
+.icon-pluma:before {
+	content: "\e908";
+	padding-right: 0.4rem;
+}
+
 .contenido {
 	margin: 1rem;
 }
@@ -144,6 +175,18 @@ nav ul .publicar_nav a {
 }
 .contenido .item .votacion .comentarios_item {
 	float: right;
+}
+
+.icon-f-arriba:before {
+	content: "\ea32";
+}
+
+.icon-f-abajo:before {
+	content: "\ea36";
+}
+
+.icon-estrella:before {
+	content: "\e9d9";
 }
 
 footer {
