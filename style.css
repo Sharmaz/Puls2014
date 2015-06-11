@@ -164,10 +164,14 @@ nav ul .publicar_nav a {
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 }
 
+/*Video*/
+
 aside {
 	display: none;
 
 }
+
+/*Contenido*/
 
 .contenido {
 	margin: 1rem;
@@ -254,6 +258,8 @@ aside {
 	padding: 0 0.4rem 0 0;
 }
 
+/*Footer*/
+
 footer {
 	background: #2FBCDD;
 	color: white;
@@ -277,6 +283,7 @@ footer p:last-child:after {
 	content: " -";
 }
 
+/*Media Query's para Responsive Design*/
 
 @media screen and (min-width: 768px) {
 
