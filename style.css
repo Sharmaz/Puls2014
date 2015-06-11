@@ -31,18 +31,23 @@ body {
 }
 a {
 	color: #2FBCDD;
+	text-decoration: none;
 }
 header {
 	background: #343B54;
 	color: white;
 	display: flex;
+	display: -webkit-flex;
 
 }
 
 header h1 {
+	border-left: 1px solid white;
 	font-size: 1.2rem;
 	font-weight: normal;
 	margin-top: 1rem;
+	overflow: hidden;
+	padding-left: 0.8rem;
 
 }
 
@@ -50,21 +55,37 @@ header .logo img {
 	position: absolute;
 	left: 0;
 	width: 52px;
-	border-right: 1px solid white;
 	margin-right: 0.5rem;
 	padding-right: 0.5rem;
 	margin-left: 0.25rem;
 	padding-left: 0.25rem;
+	justify-content: flex-start;
+}
+
+header .logo img:hover {
+		-webkit-transform: rotate(360deg);
+	   -moz-transform: rotate(360deg);
+	    -ms-transform: rotate(360deg);
+	     -o-transform: rotate(360deg);
+	        transform: rotate(360deg);
+
+	    -webkit-transition: 1s;
+	       -moz-transition: 1s;
+	        -ms-transition: 1s;
+	         -o-transition: 1s;
+	            transition: 1s;
 
 }
+
 header .avatar img {
 	border-radius: 50%;
 	width: 50px;
+	justify-content: flex-end;
 }
 
 nav {
 	background-color: #80BCA3;
-	padding: 0 0.5rem;
+	padding: 0 6rem 0 0;
 	position: relative;
 	
 }
@@ -76,14 +97,22 @@ nav ul {
 
 nav ul li {
 	display: inline-block;
-	margin: 0 1em 0 0;
+	margin: 0 0.5rem 0 0.5rem;
 }
 
 nav ul li a {
 	color: white;
-	text-decoration: none;
 	display: block;
 	padding: 0.5rem 0;
+}
+
+nav ul li a:hover{
+	background: #F4502A;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	    -ms-transition: .3s;
+	     -o-transition: .3s;
+	        transition: .3s;
 }
 nav ul .publicar_nav {
 	position: absolute;
@@ -103,7 +132,12 @@ nav ul .publicar_nav a {
 
 .icon-pluma:before {
 	content: "\e908";
-	padding-right: 0.4rem;
+	padding-right: 0.5rem;
+}
+
+aside {
+	display: none;
+
 }
 
 .contenido {
@@ -114,6 +148,7 @@ nav ul .publicar_nav a {
 	border-bottom: 3px solid #2FBCDD;
 	min-height: 128px;
 	position: relative;
+	margin: 0 0 3rem 0;
 
 }
 
@@ -136,7 +171,6 @@ nav ul .publicar_nav a {
 
 .contenido .item .titulo_item a {
 	color: #444;
-	text-decoration: none;
 }
 
 .contenido .item .autor_item {
@@ -156,7 +190,6 @@ nav ul .publicar_nav a {
 	display: inline-block;
 	float: left;
 	padding: 0.2rem 0.5rem;
-	text-decoration: none;
 }
 .contenido .item .datos_item .fecha_item {
 	color: #aaa;
@@ -183,10 +216,13 @@ nav ul .publicar_nav a {
 
 .icon-f-abajo:before {
 	content: "\ea36";
+	color: #DD4F24;
 }
 
 .icon-estrella:before {
 	content: "\e9d9";
+	color: #FFBE2C;
+	padding: 0 0.4rem 0 0;
 }
 
 footer {
@@ -213,4 +249,31 @@ footer p:last-child:after {
 }
 
 
+@media screen and (min-width: 768px) {
+
+	.contenido {
+		margin: 1rem 0rem 0 1rem;
+		position: relative;
+	}
+	.contenido .item{
+		width: 48%;
+		display: inline-block;
+		margin: 0 1% 3rem 0;
+
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+	aside{
+	display: block;
+	float: right;
+	margin: 2rem 5% 0 0;
+	width: 45%;
+
+	}
+	aside video{
+		width: 100%;
+	}
+}
 
