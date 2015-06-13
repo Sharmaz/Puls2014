@@ -145,6 +145,7 @@ nav ul .publicar_nav a {
 .formulario {
 	padding: 1rem;
 	text-align: right;
+	display: none;
 }
 
 .formulario input {
@@ -304,7 +305,7 @@ footer p:last-child:after {
 	aside{
 	display: block;
 	float: right;
-	margin: 2rem 5% 0 0;
+	margin: 2rem 3% 0 0;
 	width: 45%;
 
 	}
