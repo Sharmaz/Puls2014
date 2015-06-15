@@ -3,6 +3,7 @@ var $form = $('#formulario'),
 	$url = $('#url'),
 	$primerPost = $('.item').first(),
 	$video = $('video'),
+	$mapa = $('#geo'),
 	$lista = $('#contenido');
 
 if (localStorage.getItem('autosave')) {
@@ -19,6 +20,7 @@ function mostrarOcultarFormulario() {
 	$form.slideToggle();
 	$lista.slideToggle();
 	$video.slideToggle();
+	$mapa.slideToggle();
 	return false;
 }
 
