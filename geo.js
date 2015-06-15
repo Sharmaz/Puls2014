@@ -12,6 +12,8 @@ $(function(){
 		var mapa = new Image();
 		mapa.src = "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=380x300&sensor=false&center=" + lat + "," + lon; 
 		$('#geo').append(mapa);
+		
+		obtenerGeoInformacion(lat, lon);
 		}
 
 	geo.getCurrentPosition(geo_exito, geo_error, opciones);

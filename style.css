@@ -283,6 +283,9 @@ footer p:last-child:before {
 footer p:last-child:after {
 	content: " -";
 }
+footer img {
+	width: 60px;
+}
 
 /*Media Query's para Responsive Design*/
 
