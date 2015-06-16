@@ -308,17 +308,19 @@ footer img {
 	aside{
 	display: block;
 	float: right;
-	margin: 2rem 3% 0 0;
 	width: 45%;
 
 	}
 	aside video {
-		width: 100%;
+		width: 85%;
+		margin: 1rem 0 1rem 0;
+
+
 	}
 
-	aside #geo {
-		width: 100%;
-		margin: 0 0 1rem 8%;
+	aside #geo + #clima{
+		width: 90%;
+		margin: 1rem 0 1rem 0;
 		}
 }
 
